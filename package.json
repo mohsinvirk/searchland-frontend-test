@@ -5,7 +5,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --setupFiles ./setupFile.js",
     "eject": "react-scripts eject",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
@@ -13,6 +13,7 @@
     "build-storybook": "build-storybook -s public"
   },
   "dependencies": {
+    "@emotion/styled": "^11.10.5",
     "@mui/material": "^5.10.14",
     "@mui/styled-engine-sc": "^5.10.14",
     "@testing-library/jest-dom": "5.16.2",
@@ -58,6 +59,9 @@
     ]
   },
   "devDependencies": {
+    "@emotion/react": "^11.10.5",
+    "@fontsource/plus-jakarta-sans": "^4.5.10",
+    "@react-theming/storybook-addon": "^1.1.7",
     "@storybook/addon-a11y": "^6.5.13",
     "@storybook/addon-actions": "^6.5.13",
     "@storybook/addon-essentials": "^6.5.13",
